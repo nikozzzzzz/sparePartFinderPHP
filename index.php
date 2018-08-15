@@ -9,12 +9,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 <!-- если есть пост, то делает всю работу    --> 
+
+
+
 <?php 
 function getPostAndReplaceSpace() {
 $query = $_POST['query'];
-   // echo $query;
-   // echo "<br>";
-    return $queryNoSpace =  str_replace (" ", "+", $query);  
+return  urlencode($query);  
 }
 ?>
 <?php    
