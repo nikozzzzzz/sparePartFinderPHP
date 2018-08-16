@@ -14,19 +14,19 @@
 
 <?php 
 function getPostAndReplaceSpace() {
-$query = $_POST['query'];
-return  urlencode($query);  
+$query = "iphone";
+if (isset($_POST['submit'])){
+    $query = $_POST['query'];
+return  urlencode($query); 
 }
-?>
-<?php    
-if(isset($_POST['submit'])) {
-    
-      
+ 
+}  
+if(isset($_POST['submit'])) {      
  getPostAndReplaceSpace();
 } 
-    ?>
+?>
 
-<!-- хтмл для красного  -->
+<!-- хтмл для томата  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,11 +46,10 @@ if(isset($_POST['submit'])) {
     </div> 
     <div class="col-md-4">
     <!--  вот основная форма ввода данных и отправки, не ломай -->
-        <form action="index.php" method="post">
+    <form action="index.php" method="post">
     <input type="text" name="query" placeholder="введите запчасть">
     <input type="submit" name="submit">
-    
-        </form> 
+    </form> 
      <!-- форма кончилась, можешь дальше ломать все нахуй  -->
 
     </div>
