@@ -20,9 +20,7 @@ return  urlencode($query);
 ?>
 <?php    
 if(isset($_POST['submit'])) {
-    
-      
- getPostAndReplaceSpace();
+getPostAndReplaceSpace();
 } 
     ?>
 
