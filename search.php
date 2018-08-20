@@ -53,7 +53,7 @@ if(isset($_POST['submit'])) {
     </div> 
     <div class="col-md-4">
     <!--  вот основная форма ввода данных и отправки, не ломай -->
-    <form action="search.php" method="post">
+    <form action="search.php.php" method="post">
     <input type="text" name="query" placeholder="введите запчасть">
     <input type="submit" name="submit">
     </form> 
