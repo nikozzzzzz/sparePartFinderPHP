@@ -14,26 +14,17 @@
 
 <?php 
 function getPostAndReplaceSpace() {
-$query = "iphone";
-if (isset($_POST['submit'])){
-    $query = $_POST['query'];
-return  urlencode($query); 
+$query = $_POST['query'];
+return  urlencode($query);  
 }
-<<<<<<< HEAD:index.php
 ?>
 <?php    
 if(isset($_POST['submit'])) {
 getPostAndReplaceSpace();
-=======
- 
-}  
-if(isset($_POST['submit'])) {      
- getPostAndReplaceSpace();
->>>>>>> 4465fc2e303a86290fc46da9d910a93a7caa4c62:search.php
 } 
-?>
+    ?>
 
-<!-- хтмл для томата  -->
+<!-- хтмл для красного  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,10 +44,15 @@ if(isset($_POST['submit'])) {
     </div> 
     <div class="col-md-4">
     <!--  вот основная форма ввода данных и отправки, не ломай -->
+<<<<<<< HEAD:search.php
     <form action="search.php.php" method="post">
+=======
+        <form action="index.php" method="post">
+>>>>>>> parent of a37f91c... Merge branch 'master' of https://github.com/nikozzzzzz/sparePartFinderPHP:index.php
     <input type="text" name="query" placeholder="введите запчасть">
     <input type="submit" name="submit">
-    </form> 
+    
+        </form> 
      <!-- форма кончилась, можешь дальше ломать все нахуй  -->
 
     </div>
