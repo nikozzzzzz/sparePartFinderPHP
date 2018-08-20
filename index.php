@@ -46,6 +46,7 @@ getPostAndReplaceSpace();
     <!--  вот основная форма ввода данных и отправки, не ломай -->
 <<<<<<< HEAD:index.php
 <<<<<<< HEAD:index.php
+<<<<<<< HEAD:index.php
 <<<<<<< HEAD:search.php
     <form action="search.php.php" method="post">
 =======
@@ -54,6 +55,9 @@ getPostAndReplaceSpace();
 =======
         <form action="index.php" method="post">
 >>>>>>> parent of a37f91c... Merge branch 'master' of https://github.com/nikozzzzzz/sparePartFinderPHP:index.php
+=======
+    <form action="search.php.php" method="post">
+>>>>>>> parent of 4465fc2... исправил опечатку:search.php
 =======
     <form action="search.php.php" method="post">
 >>>>>>> parent of 4465fc2... исправил опечатку:search.php
