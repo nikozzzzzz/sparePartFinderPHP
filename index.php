@@ -44,8 +44,12 @@ getPostAndReplaceSpace();
     </div> 
     <div class="col-md-4">
     <!--  вот основная форма ввода данных и отправки, не ломай -->
+<<<<<<< HEAD:index.php
 <<<<<<< HEAD:search.php
     <form action="search.php.php" method="post">
+=======
+        <form action="index.php" method="post">
+>>>>>>> parent of a37f91c... Merge branch 'master' of https://github.com/nikozzzzzz/sparePartFinderPHP:index.php
 =======
         <form action="index.php" method="post">
 >>>>>>> parent of a37f91c... Merge branch 'master' of https://github.com/nikozzzzzz/sparePartFinderPHP:index.php
