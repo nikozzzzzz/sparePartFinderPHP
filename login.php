@@ -13,6 +13,13 @@ if (isset($_POST['submit'])){
     $query = $_POST['login'];
     echo $query;
 }
+if ($login && $password){
+    echo $login;
+    echo $password;
+} else {
+    echo "please fill all fields";
+}
+
     ?>   
     
     <!-- хтмл для томата  -->
