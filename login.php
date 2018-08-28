@@ -9,6 +9,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
  <?php 
+ //define login ahead to fix notice
+$login = "";
 $servername = "localhost";
 $dbusername = "spareFinder";
 $dbpassword = "Gotohell5122";
