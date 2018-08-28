@@ -9,9 +9,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
  <?php 
+$servername = "localhost";
+$dbusername = "spareFinder";
+$dbpassword = "Gotohell5122";
+$database = "spareLogin";
+// Create connection
+$conn = new mysqli($servername, $dbusername, $dbpassword, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} else {
+echo "Connected successfully";
+}
 if (isset($_POST['submit'])){
-    $query = $_POST['login'];
-    echo $query;
+    $login = $_POST['login'];
+    $password = $_POST['password'];
+    
 }
 if ($login && $password){
     echo $login;
