@@ -27,20 +27,20 @@ $query ="INSERT INTO users(login,password) ";
 $query  .= "VALUES ('$login','$password')";
 $result = mysqli_query($conn,$query);
 if(!$result) {
-    die('Query failed');
+    die('Что-то пошло не так с базой данных');
 }
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Подключение не удалось: " . $conn->connect_error);
 } else {
-echo "Connected successfully";
+echo "Подключение успешно. ";
 }
 }
 if ($login && $password){
     echo '';
 } else {
-    echo "Please fill al; required fields :)";
+    echo "Заполните все поля";
 }
 
     ?>   
@@ -50,7 +50,7 @@ if ($login && $password){
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Login/Register</title>
+    <title>Регистрация</title>
 </head>
 <body>
     
@@ -58,13 +58,13 @@ if ($login && $password){
   <div class="row">
       
     <div class="col-md-4">
-   text
+   текст
     </div> 
     <div class="col-md-4">
     <!--  вот основная форма ввода данных и отправки, не ломай -->
     <form action="login.php" method="post">
-    <input type="text" name="login" placeholder="ваш логин">
-    <input type="password" name="password" placeholder="ваш пароль">
+    <input type="text" name="login" placeholder="Логин">
+    <input type="password" name="password" placeholder="Пароль">
     <input type="submit" name="submit">
     </form> 
      <!-- форма кончилась, можешь дальше ломать все нахуй  -->
@@ -73,7 +73,7 @@ if ($login && $password){
     <div class="col-md-4">
         
         
-        text
+        текст
         
     </div>
    
