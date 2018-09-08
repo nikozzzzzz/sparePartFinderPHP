@@ -9,7 +9,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 <!-- если есть пост, то делает всю работу    --> 
-
+<script type="text/javascript">
+function open_win() {window.open("http://siriust.ru/?subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&pshort=Y&pfull=N&pname=Y&pkeywords=N&pcode=Y&match=all&q=<?php echo getPostAndReplaceSpace(); ?>&dispatch=products.search")
+	    window.open("https://detalka.ru/index.php?route=product/search&search=<?php echo getPostAndReplaceSpace(); ?>&description=true&sub_category=true")
+	    window.open("http://axmobi.ru/kategoryja/all?search=<?php echo getPostAndReplaceSpace(); ?>")
+	    window.open("http://green-spark.ru/search/?q=<?php echo getPostAndReplaceSpace(); ?>&section=0&only_stock=no")
+	    window.open("https://ekaterinburg.axeum.ru/category/all?search=<?php echo getPostAndReplaceSpace(); ?>&search_area=")
+}
+</script
 
 
 <?php 
@@ -67,6 +74,10 @@ if(isset($_POST['submit'])) {
         <a target="_blank" href="http://green-spark.ru/search/?q=<?php echo getPostAndReplaceSpace(); ?>&section=0&only_stock=no">Ссылка на гринспарк</a>
         <br>
         <a target="_blank" href="https://ekaterinburg.axeum.ru/category/all?search=<?php echo getPostAndReplaceSpace(); ?>&search_area=">Ссылка на аксеум</a>
+ <br>
+        <input type=button value="Open Windows" onclick="open_win()">
+
+ 
  <!-- ссылки кончились нахуй  -->
   
         
@@ -77,3 +88,33 @@ if(isset($_POST['submit'])) {
     
 </body>
 </html>
+<script type="text/javascript">
+function open_win() {
+    window.open("http://siriust.ru/?subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&pshort=Y&pfull=N&pname=Y&pkeywords=N&pcode=Y&match=all&q=<?php echo getPostAndReplaceSpace(); ?>&dispatch=products.search"")
+    window.open("https://detalka.ru/index.php?route=product/search&search=<?php echo getPostAndReplaceSpace(); ?>&description=true&sub_category=true")
+    window.open("http://axmobi.ru/kategoryja/all?search=<?php echo getPostAndReplaceSpace(); ?>")
+    window.open("http://green-spark.ru/search/?q=<?php echo getPostAndReplaceSpace(); ?>&section=0&only_stock=no")
+    window.open("https://ekaterinburg.axeum.ru/category/all?search=<?php echo getPostAndReplaceSpace(); ?>&search_area=")
+}
+</script
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
